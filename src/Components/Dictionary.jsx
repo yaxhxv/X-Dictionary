@@ -52,9 +52,27 @@ const Dictionary = () => {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
-      <div>{searchResult && <div>{searchResult}</div>}</div>
+      {searchResult && <div>{searchResult}</div>}
     </div>
   );
 };
+
+
+
+// return (
+//   <div>
+//     <h1>Dictionary App</h1>
+//     <form onSubmit={handleSearch}>
+//       <input type="text"
+//       placeholder="Search for a word..."
+//       value={searchTerm} 
+//       onChange={handleSearch}/>
+//       <button type="submit">Submit</button>
+//     </form>
+//     <h3>Definition:</h3>
+//     <p>{searchResult}</p>
+//   </div>
+// );
+ 
 
 export default Dictionary;
