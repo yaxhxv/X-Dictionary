@@ -26,7 +26,7 @@ const Dictionary = () => {
             <strong>Definition:</strong>
           </p>
           <p>{foundWord.meaning}</p>
-        </div>,
+        </div>
       );
     } else {
       setSearchResult(
@@ -35,7 +35,7 @@ const Dictionary = () => {
             <strong>Definition:</strong>
           </p>
           <p>Word not found in the dictionary.</p>
-        </div>,
+        </div>
       );
     }
   };
@@ -43,7 +43,7 @@ const Dictionary = () => {
   return (
     <div className="App">
       <h1>Dictionary App</h1>
-      <div>
+       
         <input
           type="text"
           placeholder="Search for a word"
@@ -51,7 +51,7 @@ const Dictionary = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <button onClick={handleSearch}>Search</button>
-      </div>
+       
       {searchResult && <div>{searchResult}</div>}
     </div>
   );
